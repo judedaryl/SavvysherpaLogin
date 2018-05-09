@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sb_login_gradient">
+
+
+
+    <LinearLayout
+        android:id="@+id/SBLoginFormContainer"
+        android:padding="16dp"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/SBLoginImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/ic_login_icon_sample"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/SBLoginTitle"
+            android:layout_toRightOf="@id/SBLoginImage"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@android:color/white"
+            android:text="TreatU Application"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/SBLoginForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/form_rounded"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:paddingTop="10dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/SBLoginUsernameHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username">
+
+                    <EditText
+
+                        android:id="@+id/SBLoginUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeActionId="1"
+                        android:imeOptions="actionNext"
+                        android:fontFamily="@font/roboto_thin"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/SBLoginPasswordHint"
+                    android:layout_width="match_parent"
+                    android:hint="Password"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/SBLoginPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeActionId="2"
+                        android:imeOptions="actionGo"
+                        android:fontFamily="@font/roboto_thin"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/SBLoginSubmit"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/SBLogin"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+            <!-- Login progress -->
+            <ProgressBar
+                android:id="@+id/SBLoginProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

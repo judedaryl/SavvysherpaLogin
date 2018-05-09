@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="LoginView">
+      <attr name="username_hint" format="string"/>
+      <attr name="password_hint" format="string"/>
+      <attr name="submit_button_text" format="string"/>
+      <attr name="title" format="string"/>
+      <attr name="image" format="reference"/>
+  </declare-styleable>
+</resources>
